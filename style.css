@@ -1,0 +1,100 @@
+#parent{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 400px;
+    background-color: rgb(241, 247, 244);
+    grid-gap: 3px 20px;
+}
+#wellcome{
+    background-color: rgb(237, 100, 164);
+    font-size:30px ;
+    text-align: center;
+    border: 3px solid rgb(35, 7, 71);
+    padding-inline: 2px;
+    margin-top: 5px;
+}
+#nav{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bay-roller.jpg);
+    background-size: cover;
+    font-size:30px ;
+    text-align: center;
+    border: 3px solid rgb(35, 7, 71);
+    padding-inline: 2px;
+    margin-top: 5px;
+
+    
+    }
+    #nav .nav-links{
+        display: flex;
+        padding: 2% 3%;
+        justify-content: space-between;
+        text-align: right;
+    }
+    #nav .nav-links li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    #nav .nav-links li a{
+        color: rgb(119, 243, 46);
+        text-decoration: none;
+        font-size: 35px;
+    }
+    #nav .cta{
+        font-size: 45px;
+    }
+    /*  description----*/
+    .item1{grid-area: header;}
+    .item2{grid-area: menu;}
+    .item3{grid-area: main;}
+    .item4{grid-area: right;}
+    .item5{grid-area: footer;}
+    .grid-container{
+        display: grid;
+        width: 98%;
+        height: 100vh;
+        grid-template-areas:' header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: aquamarine;
+    padding: 10px;
+    
+
+    }
+    .grid-container > div{
+        background-color: burlywood;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 30px;
+
+    }
+    .item1 > h4{
+        font-size: 30px;
+        color: blue;
+
+    }
+    .item1 > p{
+        font-size: 20px;
+        color: rgb(99, 19, 19); 
+
+    }
+    .item2 > p{
+        font-size: 20px;
+        color: rgb(219, 11, 11);
+        
+        box-sizing: border-box;   
+    }
+    .item3 > p{
+        font-size: 20px;
+        color: rgb(23, 25, 134);
+        
+        box-sizing: border-box;
+    }
+    .item5 > p{
+        font-size: 20px;
+        color: rgb(23, 25, 134);
+        
+        box-sizing: border-box;
+    }
